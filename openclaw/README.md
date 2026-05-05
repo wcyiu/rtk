@@ -36,7 +36,10 @@ openclaw gateway restart
 ### Or install via OpenClaw CLI
 
 ```bash
-openclaw plugins install ./openclaw
+cd openclaw
+pnpm install
+pnpm run build
+openclaw plugins install . --dangerously-force-unsafe-install
 ```
 
 ## Configuration
